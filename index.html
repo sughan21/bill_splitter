@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bill Splitter" />
+    <title>Bill Splitter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h3>Bill Splitter</h3>
+      <div class="cost">
+        <span id="cost-per-person">Enter total amount</span>
+      </div>
+      <div class="input-box">
+        <i class="fa fa-inr"></i>
+        <input type="number" id="amount" placeholder="Total Bill Amount (₹)" />
+      </div>
+      <div class="input-box">
+        <i class="fa fa-users"></i>
+        <input type="number" id="people" placeholder="Number of People" />
+      </div>
+      <div class="btn">
+        <button onclick="return calcAmt()" id="calculate-btn">Calculate</button>
+        <button onclick="resetFields()" id="reset-btn">Reset</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
